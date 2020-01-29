@@ -21,7 +21,7 @@ public class ORDSTests {
 
     //ec2-34-201-69-55.compute-1.amazonaws.com - my host, you have something else
     //   /ords/hr or //ords/hr/employees - same for all
-    private String baseURI = "http://ec2-35-173-218-138.compute-1.amazonaws.com:1000/ords/hr";
+    private String baseURI = "http://ec2-34-201-69-55.compute-1.amazonaws.com:1000/ords/hr";
 
     //we start from given()
     //then we can specify type of request like: get(), put(), delete(), post()
@@ -38,7 +38,7 @@ public class ORDSTests {
 
         assertEquals(200, response.getStatusCode());
 
-        System.out.println(response.prettyPrint());
+        response.prettyPrint();
     }
 
     //#TASK: get employee with id 100 and verify that response returns status code 200
